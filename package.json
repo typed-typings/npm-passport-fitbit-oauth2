@@ -13,7 +13,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/types/npm-jsonld.git"
+    "url": "git+https://github.com/types/npm-passport-fitbit-oauth2.git"
   },
   "author": {
     "name": "Blake Embrey",
@@ -22,9 +22,9 @@
   },
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/types/npm-jsonld/issues"
+    "url": "https://github.com/types/npm-passport-fitbit-oauth2/issues"
   },
-  "homepage": "https://github.com/types/npm-jsonld#readme",
+  "homepage": "https://github.com/types/npm-passport-fitbit-oauth2#readme",
   "devDependencies": {
     "greenkeeper-postpublish": "^1.0.1",
     "passport-fitbit-oauth2": "^1.0.0",
