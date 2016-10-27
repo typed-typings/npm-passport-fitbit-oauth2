@@ -24,8 +24,10 @@ import Store = require('passport-oauth2/lib/store/null');
  *       }
  *     ));
  */
-declare class FitbitStrategy extends OAuth2Strategy {
-  constructor (options: FitbitStrategy.Options, verify: OAuth2Strategy.VerifyFunction);
+declare class FitbitStrategy extends OAuth2Strategy<FitbitStrategy.Profile> {
+  name: 'fitbit';
+
+  constructor (options: FitbitStrategy.Options, verify: OAuth2Strategy.VerifyFunction<FitbitStrategy.Profile>);
 }
 
 declare namespace FitbitStrategy {
@@ -42,6 +44,21 @@ declare namespace FitbitStrategy {
     store?: Store;
     proxy?: boolean;
     skipUserProfile?: boolean;
+  }
+
+  export interface Profile {
+    provider: 'fitbit';
+    id: string;
+    name: string;
+    displayName: string;
+    birthday: string;
+    relationship: string;
+    isPerson: boolean;
+    isPlusUser: boolean;
+    gender: string;
+    picture: string;
+    user?: any;
+    _json: any;
   }
 
   export const Strategy: typeof FitbitStrategy;

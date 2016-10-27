@@ -6,6 +6,6 @@
     "node": "registry:env/node#6.0.0+20160824014937"
   },
   "dependencies": {
-    "passport-oauth2": "registry:npm/passport-oauth2#1.3.0+20161027033942"
+    "passport-oauth2": "registry:npm/passport-oauth2#1.3.0+20161027183833"
   }
 }
